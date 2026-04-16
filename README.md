@@ -11,16 +11,18 @@ A React + TypeScript application that fetches and displays products from [DummyJ
 ### Installation
 
 1. Clone the repository
-   git clone [<repo-url>](https://github.com/xinyi92/products-react)
+   ```
+   git clone https://github.com/xinyi92/products-react.git
    cd products-react
+   ```
 
-2. Install dependencies
+3. Install dependencies
    npm install
 
-3. Start the development server
+4. Start the development server
    npm run dev
 
-4. Open http://localhost:5173 in your browser
+5. Open http://localhost:5173 in your browser
 
 
 
