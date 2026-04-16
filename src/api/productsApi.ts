@@ -24,7 +24,7 @@ export const fetchProducts = async (
 
     const res = await fetch(`https://dummyjson.com/products?${query}`)
 
-    if (!res.ok) throw new Error('Failed to fetch')
+    if (!res.ok) throw new Error('Failed to fetch products')
 
     return res.json()
 }
@@ -34,7 +34,7 @@ export const searchProducts = async (params?: FetchProductParams): Promise<Produ
     const res = await fetch(`https://dummyjson.com/products/search?${query}`)
 
     if (!res.ok) {
-        throw new Error('Failed to fetch')
+        throw new Error('Failed to fetch products')
     }
 
     return res.json()
@@ -48,7 +48,7 @@ export const addProducts = async (data: NewProductForm) => {
     })
 
     if (!res.ok) {
-        throw new Error('Failed to fetch')
+        throw new Error('Failed to add product')
     }
 
   return res.json()

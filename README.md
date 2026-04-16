@@ -11,21 +11,24 @@ A React + TypeScript application that fetches and displays products from [DummyJ
 ### Installation
 
 1. Clone the repository
-   git clone [<repo-url>](https://github.com/xinyi92/products-react)
+   ```
+   git clone https://github.com/xinyi92/products-react.git
    cd products-react
+   ```
 
-2. Install dependencies
+3. Install dependencies
    npm install
 
-3. Start the development server
+4. Start the development server
    npm run dev
 
-4. Open http://localhost:5173 in your browser
+5. Open http://localhost:5173 in your browser
 
 
 
 ## Folder Structure
 
+```
 src/
 ├── api/
 │   └── productsApi.ts       # All API calls to DummyJSON
@@ -43,6 +46,7 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
+```
 
 
 ## Key Technical Decisions
@@ -73,3 +77,7 @@ On successful POST, the new product is prepended to local state immediately inst
 - **Environment variable for base URL** — the API base URL is hardcoded in `productsApi.ts` and should live in `.env` for easier environment switching
 
 - **Better CSS** — styling is intentionally minimal; a component-level approach (CSS modules or a utility library) would scale better
+
+
+## Demo Link
+https://xinyiproductsreact.netlify.app/
