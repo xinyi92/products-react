@@ -26,6 +26,7 @@ A React + TypeScript application that fetches and displays products from [DummyJ
 
 ## Folder Structure
 
+```
 src/
 ├── api/
 │   └── productsApi.ts       # All API calls to DummyJSON
@@ -43,6 +44,7 @@ src/
 ├── App.tsx
 ├── main.tsx
 └── index.css
+```
 
 
 ## Key Technical Decisions
@@ -73,3 +75,7 @@ On successful POST, the new product is prepended to local state immediately inst
 - **Environment variable for base URL** — the API base URL is hardcoded in `productsApi.ts` and should live in `.env` for easier environment switching
 
 - **Better CSS** — styling is intentionally minimal; a component-level approach (CSS modules or a utility library) would scale better
+
+
+## Demo Link
+https://xinyiproductsreact.netlify.app/
